@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+#html {
+  word-break: break-all;
+  /*自动换行*/
+}
+
+#div1 {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+}
+
+/*两个伪元素；*/
+#div1::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+#div1::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+@media (max-width: 500px) {
+  #html {
+    height: 50vh;
+    overflow: auto;
+  }
+
+  #div1Wrapper {
+    height: 50hv;
+  }
+
+  #div1 {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
