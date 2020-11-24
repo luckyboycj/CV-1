@@ -1,3 +1,2 @@
-# CV-1
-会动的代码，点击链接预览！
+修改预览地址
 parcel build src/index.html --public-url .
